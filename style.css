@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Island+Moments&family=Lobster&family=Open+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@1,700&family=Pacifico&display=swap');
+
+:root {
+	--font-family: 'Lobster', cursive;
+	--font-family-satu: 'Bebas Neue', cursive;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-width: 100%;
+	font-family: var(--font-family);
+}
+
+/*NAVBAR*/
+section nav {
+	background-color: rgba(61, 58, 59, .8);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 2px 20px 2px black;
+	z-index: 10;
+}
+
+section	nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+section nav ul li{
+	/*padding: 5px 10px;
+	margin-right: 10px;
+	background-color: rgba(127, 133, 129, .5);
+	border-radius: 7px;
+	border: 2px solid ghostwhite;*/
+}
+
+section nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+    padding: 4px 20px;
+	margin-right: 10px;
+	background-color: rgba(127, 133, 129, .5);
+	border-radius: 7px;
+	border: 2px solid ghostwhite;
+}
+
+section nav ul li a:hover{
+	color: black;
+	border-color: black;
+	text-shadow: 2px 1px 2px white;
+	font-size: 1.45em;
+}
+
+
+/*BACKGROUND*/
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	color: #eee;
+	text-shadow: 2px 2px 2px black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.menu-myProfile {
+	background-image: url(images/parallax/myProfile.jpg);
+	justify-content: center;
+}
+
+.menu-myHobby {
+	background-image: url(images/parallax/myHobby.jpg);
+	justify-content: center;
+	flex-direction: row;
+}
+
+.menu-mySkill {
+	background-image: url(images/parallax/mySkill.jpg);
+	justify-content: center;
+	flex-direction: row;
+}
+
+.menu-mySosmed {
+	background-image: url(images/parallax/mySosmed.jpg);
+	justify-content: center;
+	flex-direction: row;
+}
+
+/*skill*/
+.menu .skill{
+	width: 60%;
+	margin-right: 10px;
+}
+
+.menu .skill .bars{
+	margin-bottom: 15px;
+}
+
+.menu .skill .info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu .skill span{
+	font-weight: bold;
+	font-size: 18px;
+	color: #eee;
+	text-shadow: none;
+	font-family: var(--font-family-satu);
+	letter-spacing: 1px;
+}
+
+.menu .skill .line{
+	height: 5px;
+	width: 100%;
+	background: lightgray;
+	position: relative;
+}
+
+.menu .skill .line::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 90%;
+	left: 0;
+	top: 0;
+	background: crimson;
+}
+
+.menu .skill .css::before{
+	width: 40%;
+}
+
+.menu .skill .js::before{
+	width: 40%;
+}
+
+.menu .skill .network::before{
+	width: 30%;
+}
+ 
+.menu .hobby{
+	width: 60%;
+}
+
+/*TEKS*/
+.menu h1, p {
+	text-align: center;
+}
+
+.menu h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	font-family: var(--font-family-satu);
+}
+
+.menu p {
+	margin: 0;
+	font-size: 1.5em;
+	letter-spacing: 3px;
+}
+
+.menu span {
+	color: #26030b;
+	text-shadow: 2px 2px 2px white;
+}
+
+/*LINK*/
+.link {
+	width: 60%;
+}
+
+.link ul {
+	display: flex;
+	justify-content: center;
+	margin-right: 75px;
+}
+
+.link ul li {
+	list-style-type: none;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.link ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.link ul li a:hover {
+	color: blueviolet;
+}
+
+/*THUMBNAILS*/
+.picture {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border: 3px solid #999;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+	border-radius: 15px;
+}
+
+.picture-myProfile {
+	background-image: url(images/myProfile.png);
+	border-radius: 50%;
+	background-position: top;
+}
+
+.picture-myHobby {
+	background-image: url(images/myHobby.jpg);
+	width: 250px;
+	height: 250px;
+}
+
+.picture-mySkill {
+	background-image: url(images/mySkill.jpg);
+	width: 250px;
+	height: 250px;
+}
+
+.picture-mySosmed {
+	background-image: url(images/mySosmed.png);
+	background-color: rgba(255, 255, 255, .6);
+	width: 250px;
+	height: 250px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 567px){
+	.menu-myHobby {
+		flex-direction: column;
+	}
+
+	.picture-myHobby {
+		width: 150px;
+		height: 150px;
+	}
+
+	.menu-mySkill {
+		flex-direction: column;
+	}
+
+	.picture-mySkill {
+		width: 150px;
+		height: 150px;
+	}
+
+	.menu .skill{
+		margin: 0;
+		width: 80%;
+	}
+
+	.menu-mySosmed {
+		flex-direction: column;
+	}
+
+	.picture-mySosmed {
+		width: 150px;
+		height: 150px;
+	}
+
+	section nav{
+		bottom: 0;
+		top: auto;
+	}
+
+	section nav ul{
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	section	nav ul , section nav ul li{
+		margin: 5px;
+		padding: 2px;
+	}
+
+	section nav ul li:nth-child(4){
+		order: 1;
+	}
+}
